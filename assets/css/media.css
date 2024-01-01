@@ -1,0 +1,18 @@
+article {
+    text-align: center;
+    position : relative;
+}
+
+article .image {
+    text-align: left;
+}
+
+article img {
+    display: block; 
+    margin: 0 auto; 
+}
+.actions{
+    position : absolute;
+    left: 40%;
+    bottom: -21px;
+}
