@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+      </div>
+      
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              result="blur"
+              stdDeviation="10"
+              in="SourceGraphic"
+            ></feGaussianBlur>
+            <feColorMatrix
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+              mode="matrix"
+              in="blur"
+            ></feColorMatrix>
+          </filter>
+        </defs>
+      </svg>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const redirectTimeout = setTimeout(() => {
+                window.location.href = 'Home.html';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
